@@ -1,4 +1,4 @@
-# Check My Email API
+# Check My Email and Username API
 Projeto EBAC
 API simples em FastAPI para consultar dados na LeakCheck API.
 
