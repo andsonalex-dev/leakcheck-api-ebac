@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "leakcheck-api"
+version = "0.1.0"
+description = "EBAC - Tarefa de docker compose"
+authors = ["Andson de Oliveira"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+fastapi = "^0.116"
+uvicorn = {extras=["standard"], version="^0.35"}
+
+httpx = "^0.28"
+
+python-dotenv = "^1.1"
+
+pydantic-settings = "^2.10"
+
+[tool.poetry.group.dev.dependencies]
+
+pytest = "^8.4"
+
+black = "^25"
+
+ruff = "^0.12"
+
+isort = "^6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
