@@ -9,7 +9,17 @@ services:
     ports:
       - "8000:8000"
 
+    volumes:
+      - ./:/app
+
     env_file:
       - .env
+
+    environment:
+      APP_NAME: ${APP_NAME}
+      APP_ENV: ${APP_ENV}
+      HOST: ${HOST}
+      PORT: ${PORT}
+      LEAKCHECK_URL: ${LEAKCHECK_URL}
 
     restart: unless-stopped
